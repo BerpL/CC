@@ -1,11 +1,13 @@
 #include <stdio.h>
 
 
-void strcatpuntero(char *s, char *t)
+void strcatpuntero(char *m, char *n)
 {
-	while((*s)!='\0')
-		s++;
-	while((*s++ = *t++) != '\0')
+	int i;
+
+	for(i=0;(*m)!='\0';i++)
+		m++;
+	for(i=0;(*m++ = *n++)!= '\0';i++)
 		;
 
 }
@@ -17,5 +19,4 @@ int main()
 	strcatpuntero(s,t);
 	printf("%s",s);
 }
-
 
