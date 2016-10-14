@@ -1,54 +1,88 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
-int transpuesta(int **t, int **y);
-int promedio(int *p, int len);
-
-int main()
+struct node
 {
-    struct punto{
-    int x;
-    int y;
-    };
-    struct punto p1 = {1,2};
-    struct punto p2 = {2,3};
+    int val;
+    struct node *next;
+};
 
-    int **q[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
-    int **y[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
-    int **t[3][3];
-    int **r[3][3];
-    int p[10] = {1,2,1,4};
-
-    printf("%d", promedio(p,4));
-    return 0;
+struct node* crearlista(struct node *head,int n){
+    struct node *prev;
+    struct node *cur;
+    int i;
+    head = malloc(sizeof(struct node));
+    head -> val = 1;
+    prev = head;
+    for(i=2;i<=n;i++){
+        cur = malloc(sizeof(struct node));
+        cur ->val = i ;
+        prev ->next = cur;
+        prev = cur;
+    }
+    prev ->next = NULL;
+    return head;
 }
 
-//float distancia(float p1, float p2){
-//    float res;
-//    res = pow(p1.x - p2.x,0.5)+ pow(p1.y - p2.y,0.5);
-//    return res;
-//}
-
-int transpuesta(int **t, int **y){
-    int i = 0, lim = 3;
-    while(i<lim){
-        int j = 0;
-        while(j<lim){
-            *(*(t+j)+i)=*(*(y+i)+j);
-            ++j;
-    }
-    ++i;
+void imprimirlista(struct node *head){
+    struct node *t;
+    t = head;
+    while (t != NULL){
+        printf("%d", t ->val);
+        t = t-> next;
     }
 }
+struct node* borrarnodo(struct node *head, int n){
+    struct node *prev, *cur, *temp;
+    prev = head;
+    cur = head ->next;
 
-int promedio(int *p, int len){
-    int res = 1;
-    int i ;
-    for (i=0;i<len;++i){
-        res = res + (*p);
-        *p++;
+    if(head ->val ==n){
+        temp = head;
+        head = head ->next;
+        free(temp);
+        return head;
     }
-    return res/len;
+
+        while(cur!= NULL){
+            if(cur->val == n){
+                prev -> next = cur ->next;
+                free(cur);
+                break;
+            }
+            prev = cur;
+            cur = cur ->next;
+        }
+
+    return head;
+}
+struct node* insertar_inicio(struct node *head, int n){
+    struct node *prev, *cur, *temp;
+    temp = malloc(sizeof(struct node));
+    temp ->val = n;
+    temp ->next = head;
+    head = temp;
+    return head;
+}
+struct node* insertar_final(struct node *head, int n){
+    struct node *prev, *cur, *temp;
+    temp = malloc(sizeof(struct node));
+    temp ->val =n;
+    cur = head;
+    while(cur->next){
+        cur = cur->next;
+    }
+    cur->next = temp;
+    return head;
+}
+
+main()
+{
+    struct node *head;
+    head = crearlista(head,5);
+    head = insertar_inicio(head,2);
+    head = insertar_final(head,1);
+    head = borrarnodo(head,6);
+    imprimirlista(head);
 }
 
