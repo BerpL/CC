@@ -1,0 +1,157 @@
+# depslib dependency file v1.0
+1343250945 source:c:\users\david\desktop\space invaders\inicia.cpp
+	"inicia.h"
+	<allegro.h>
+
+1341435802 c:\users\david\desktop\space invaders\inicia.h
+
+1370108260 source:c:\users\david\desktop\space invaders\main.cpp
+	<allegro.h>
+	"inicia.h"
+	"disparos.h"
+
+1370109028 c:\users\david\desktop\space invaders\disparos.h
+	<allegro.h>
+
+1370109016 source:c:\users\david\desktop\space invaders\disparos.cpp
+	"disparos.h"
+	<allegro.h>
+
+1343250945 source:c:\users\david\desktop\space youtube\1 explicacion\inicia.cpp
+	"inicia.h"
+	<allegro.h>
+
+1341435802 c:\users\david\desktop\space youtube\1 explicacion\inicia.h
+
+1370109016 source:c:\users\david\desktop\space youtube\1 explicacion\disparos.cpp
+	"disparos.h"
+	<allegro.h>
+
+1370109028 c:\users\david\desktop\space youtube\1 explicacion\disparos.h
+	<allegro.h>
+
+1343250945 source:c:\users\david\desktop\space youtube\codigo base space invadrs\inicia.cpp
+	"inicia.h"
+	<allegro.h>
+
+1341435802 c:\users\david\desktop\space youtube\codigo base space invadrs\inicia.h
+
+1370109016 source:c:\users\david\desktop\space youtube\codigo base space invadrs\disparos.cpp
+	"disparos.h"
+	<allegro.h>
+
+1370109028 c:\users\david\desktop\space youtube\codigo base space invadrs\disparos.h
+	<allegro.h>
+
+1480647049 source:d:\codes\c++\codigo base space invadrs\disparos.cpp
+	"disparos.h"
+	<allegro.h>
+	"NAVE.h"
+	"ENEMIGOS.h"
+
+1480679991 d:\codes\c++\codigo base space invadrs\disparos.h
+	<allegro.h>
+	"NAVE.h"
+	"ENEMIGOS.h"
+
+1343250945 source:d:\codes\c++\codigo base space invadrs\inicia.cpp
+	"inicia.h"
+	<allegro.h>
+
+1341435802 d:\codes\c++\codigo base space invadrs\inicia.h
+
+1480689659 source:d:\codes\c++\codigo base space invadrs\main.cpp
+	<allegro.h>
+	"inicia.h"
+	"disparos.h"
+	"NAVE.h"
+	"ENEMIGOS.h"
+	<stdlib.h>
+	<time.h>
+	"personajes.h"
+	"diseno.h"
+	<vector>
+	<algorithm>
+
+1480646650 d:\codes\c++\codigo base space invadrs\include\nave.h
+	<allegro.h>
+	"../disparos.h"
+
+1480642182 source:d:\codes\c++\codigo base space invadrs\src\nave.cpp
+	"NAVE.h"
+
+1480642182 source:d:\codes\c++\codigo base space invadrs\src\enemigos.cpp
+	"ENEMIGOS.h"
+
+1480689406 d:\codes\c++\codigo base space invadrs\include\enemigos.h
+	"NAVE.h"
+
+1480647965 d:\codes\c++\codigo base space invadrs\personajes.h
+	<allegro.h>
+	"ENEMIGOS.h"
+
+1480647178 source:d:\codes\c++\codigo base space invadrs\personajes.cpp
+	"personajes.h"
+
+1480552743 source:d:\codes\c++\codigo base space invadrs\diseno.cpp
+	"diseno.h"
+
+1480552196 d:\codes\c++\codigo base space invadrs\diseno.h
+	<allegro.h>
+
+1480552743 source:d:\codes\c++\juego_final\diseno.cpp
+	"diseno.h"
+
+1480552196 d:\codes\c++\juego_final\diseno.h
+	<allegro.h>
+
+1480647049 source:d:\codes\c++\juego_final\disparos.cpp
+	"disparos.h"
+	<allegro.h>
+	"NAVE.h"
+	"ENEMIGOS.h"
+
+1480679991 d:\codes\c++\juego_final\disparos.h
+	<allegro.h>
+	"NAVE.h"
+	"ENEMIGOS.h"
+
+1481118452 d:\codes\c++\juego_final\include\nave.h
+	<allegro.h>
+	"../disparos.h"
+
+1480689406 d:\codes\c++\juego_final\include\enemigos.h
+	"NAVE.h"
+
+1343250945 source:d:\codes\c++\juego_final\inicia.cpp
+	"inicia.h"
+	<allegro.h>
+
+1341435802 d:\codes\c++\juego_final\inicia.h
+
+1480689659 source:d:\codes\c++\juego_final\main.cpp
+	<allegro.h>
+	"inicia.h"
+	"disparos.h"
+	"NAVE.h"
+	"ENEMIGOS.h"
+	<stdlib.h>
+	<time.h>
+	"personajes.h"
+	"diseno.h"
+	<vector>
+	<algorithm>
+
+1480647965 d:\codes\c++\juego_final\personajes.h
+	<allegro.h>
+	"ENEMIGOS.h"
+
+1480647178 source:d:\codes\c++\juego_final\personajes.cpp
+	"personajes.h"
+
+1480642182 source:d:\codes\c++\juego_final\src\enemigos.cpp
+	"ENEMIGOS.h"
+
+1480689708 source:d:\codes\c++\juego_final\src\nave.cpp
+	"NAVE.h"
+
